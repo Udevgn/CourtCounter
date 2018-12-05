@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18dp"
+                    android:text="Team A"
+                    android:textSize="32sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/teamA_scoreCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="48dp"
+                    android:text="0"
+                    android:textSize="32sp"
+                    android:gravity="center"
+                    />
+
+                <Button
+                    android:id="@+id/scorea_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18dp"
+                    android:onClick="addThreeforTeamA"
+                    android:text="+3 POINTS"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/scorea_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18dp"
+                    android:onClick="addTwoforTeamA"
+                    android:text="+2 POINTS"
+                    android:textSize="18sp"
+
+                    />
+
+                <Button
+                    android:id="@+id/scorea_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18dp"
+                    android:onClick="addOneforTeamA"
+                    android:text="FREE THROW"
+                    android:textSize="18sp"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18dp"
+                    android:text="Team B"
+                    android:textSize="32sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/teamB_scoreCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="48dp"
+                    android:text="0"
+                    android:textSize="32sp"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/scoreb_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18dp"
+                    android:onClick="addThreeforTeamB"
+                    android:text="+3 POINTS"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/scoreb_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18dp"
+                    android:onClick="addTwoforTeamB"
+                    android:text="+2 POINTS"
+                    android:textSize="18sp"
+
+                    />
+
+                <Button
+                    android:id="@+id/scoreb_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18dp"
+                    android:onClick="addOneforTeamB"
+                    android:text="FREE THROW"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reset"
+            android:layout_gravity="center_horizontal"
+            android:onClick="Reset"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
